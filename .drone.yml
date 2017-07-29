@@ -1,0 +1,8 @@
+pipeline:
+  build:
+    image: python 
+    commands:
+      - . ./setup_env.sh 
+      - pip install requirements.txt
+      - python -m unittest discover
+ 
