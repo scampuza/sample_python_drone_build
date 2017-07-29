@@ -2,6 +2,6 @@ pipeline:
   build:
     image: python:3.5.1-alpine
     commands:
-      - pip install requirements.txt
+      - pip install -r requirements.txt
       - python -m unittest discover
       - echo 'complete' 
